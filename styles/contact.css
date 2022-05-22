@@ -1,0 +1,202 @@
+#Contact {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+#Contact > h2 {
+  text-align: center;
+  color: var(--color-white);
+  margin-top:  16px;
+  padding: 16px 0;
+  font-size: 3rem;
+}
+/*
+.contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  margin: auto;
+  text-align: center;
+}
+.contact-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.form-container {
+  border-radius: 20px;
+  width: fit-content;
+  height: 80%;
+  width: 70%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+input {
+  border: none;
+  height: 50px;
+  width: 55%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 2px inset,
+    rgba(255, 255, 255, 0) 5px 5px 0px -3px, rgb(46, 23, 23) 5px 5px,
+    rgba(255, 255, 255, 0) 10px 10px 0px -3px, rgb(112, 39, 39) 10px 10px,
+    rgba(255, 255, 255, 0) 15px 15px 0px -3px, rgb(187, 28, 28) 15px 15px,
+    rgba(255, 255, 255, 0) 20px 20px 0px -3px, rgb(255, 0, 0) 20px 20px;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+textarea {
+  border: none;
+  height: 200px;
+  width: 55%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 30px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 2px inset,
+    rgba(255, 255, 255, 0) 5px 5px 0px -3px, rgb(46, 23, 23) 5px 5px,
+    rgba(255, 255, 255, 0) 10px 10px 0px -3px, rgb(112, 39, 39) 10px 10px,
+    rgba(255, 255, 255, 0) 15px 15px 0px -3px, rgb(187, 28, 28) 15px 15px,
+    rgba(255, 255, 255, 0) 20px 20px 0px -3px, rgb(255, 0, 0) 20px 20px;
+}
+.button-contact {
+  height: 50px;
+  width: 120px;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  background: #ff0000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 40px;
+  transition: 200ms;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 2px inset,
+    rgba(255, 255, 255, 0) 0px 5px 0px -3px, rgb(202, 18, 18) 0px 5px,
+    rgba(255, 255, 255, 0) 0px 10px 0px -3px, rgb(112, 39, 39) 0px 10px,
+    rgba(255, 255, 255, 0) 0px 15px 0px -3px, rgb(83, 39, 39) 0px 15px,
+    rgba(255, 255, 255, 0) 0px 20px 0px -3px, rgb(36, 23, 23) 0px 20px;
+}
+.button-contact:hover {
+  background-color: #ff0000;
+  transform: translateY(-4px);
+  color: #fff;
+} */
+
+
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: var(--color-white);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+/* ============================ FORM =========================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  resize: none;
+  color: var(--color-white);
+}
+
+/* ----------------------- MEDIA QUERIES (medium) ------------------------ */
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #sendButton {
+    margin: 0 auto 120px auto;
+  }
+}
+
+/* ----------------------- MEDIA QUERIES (small) ------------------------ */
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm);
+  }
+
+  .about__cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+  #sendButton {
+    margin-bottom: 120px;
+    margin: 0 auto 120px auto;
+  }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,300&display=swap"
+        rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>Luis Rodriguez</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (
+        function() {
+          emailjs.init("Zd9PTDulkyMhEhyVg");
+        })();
+    </script>
+    <script type="text/javascript">
+      function sendMail() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // This method is provided within documentation: https://www.emailjs.com/docs/sdk/send-form/
+          emailjs.sendForm('service_m1nvsub', "template_k9riru8", '#contact-form').then (function() {
+              console.log ('SUCCESS!');
+              // Get the button element
+              let success = document.getElementById("sendButton");
+              // Get the contact-form
+              let contactForm = document.getElementById('contact-form') ;
+              // reset will clear the form
+              contactForm.reset();
+              // Underneath will change the html of the button to ay Successfully Sent if succesful
+              success.innerHTML = "Successfully Sent";
+              // Change the backgroundColor of the button if successful
+              success.style.backgroundColor = "green";
+              success.style.borderColor = "green";
+              // Within 3 seconds, the page will reload
+              setInterval(() => window.location.reload(true), 3000)
+              // If there is an error, it will log "FAILED..., and console log the error"
+            }, function(error) {
+                console.log ('FAILED...', error);
+            });
+          });
+        }
+    </script>
+</head>
+<body>
+
+
+
+    <nav class="navbar">
+        <a class="tablink" onclick="openPage('AboutMe', this, 'active')" id="defaultOpen"><i class="fas fa-user"></i><p id="nav-text">About</p></a>
+        <a class="tablink" onclick="openPage('Skills', this, 'active')"><i class="fas fa-book"></i><p id="nav-text">Skills</p></a>
+        <a class="tablink" onclick="openPage('Projects', this, 'active')" ><i class="fas fa-suitcase"></i><p id="nav-text">Projects</p></a>
+        <a class="tablink" onclick="openPage('Contact', this, 'active')"><i class="fas fa-comment-dots"></i><p id="nav-text">Contact</p></a>
+    </nav>
+    <!-- <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div> -->
+    <div class="content">
+
+
+    <div id="AboutMe" class="tabcontent">
+      <header id='header'>
+        <div class="container header__container">
+          <h5 class="text-light">Hello I'm</h5>
+          <h1 class="name">Luis Rodriguez</h1>
+          <h5 class="text-light">Software Developer</h5>
+
+          <div class="me">
+            <div class="me-image">
+            </div>
+          </div>
+
+
+          <div class='header__socials'>
+            <a href="www.linkedin.com/in/luisrrv" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/luisrrv" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/luis.rrv" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <div class="cta">
+            <a class='btn' href='.assets/cv.pdf' download>Download CV</a>
+            <a class='btn btn-primary' href="https://github.com/luisrrv" target="_blank">Github</a>
+          </div>
+
+          <div class="aboutme">
+
+        <div class="container about__container">
+          <div class="about__me">
+            <div class="about__me-image">
+              <img src="assets/me-header-pt.png" alt="About" />
+            </div>
+          </div>
+
+
+          <div class="about__content">
+
+            <p>I am a passionate software developer. I am always involved in new projects in order to develop quality products. I like to work with others and</p>
+
+          </div>
+        </div>
+          </div>
+
+          <!-- <a href="#contact" class='scroll__down'>Scroll Down</a> -->
+        </div>
+      </header>
+
+
+    </div>
+
+  <div id="Skills" class="tabcontent">
+      <h2 class="name">Skills</h2>
+      <div class="container experience__container">
+        <div class="experience__frontend">
+          <h3>Frontend Development</h3>
+          <div class="experience__content">
+            <article class='experience__details'>
+              <i class="fab fa-html5 experience__details-icon"></i>
+              <div>
+                <h4>HTML</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fab fa-css3 experience__details-icon"></i>
+              <div>
+                <h4>CSS</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fab fa-js-square experience__details-icon"></i>
+              <div>
+                <h4>JavaScript</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="bi bi-bootstrap-fill experience__details-icon"></i>
+              <div>
+                <h4>Bootstrap</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fab fa-react experience__details-icon"></i>
+              <div>
+                <h4>React</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fab fa-sass experience__details-icon"></i>
+              <div>
+                <h4>SASS</h4>
+
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="experience__backend">
+          <h3>Backend Development</h3>
+          <div class="experience__content">
+            <article class='experience__details'>
+              <i class="fas fa-gem experience__details-icon"></i>
+              <div>
+                <h4>Ruby</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fas fa-project-diagram experience__details-icon"></i>
+              <div>
+                <h4>Graphql</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fas fa-database experience__details-icon"></i>
+              <div>
+                <h4>PostgreSQL</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fas fa-gem experience__details-icon"></i>
+              <div>
+                <h4>Rails</h4>
+
+              </div>
+            </article>
+            <article class='experience__details'>
+              <i class="fab fa-envira experience__details-icon"></i>
+              <div>
+                <h4>MongoDB</h4>
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="extra-space">
+
+      </div>
+
+    </div>
+
+    <div id="Projects" class="tabcontent">
+      <h2 class="name">Projects</h2>
+      <div class="container portfolio__container" id="portfolio">
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio1.jpg" alt="Project Title 1" />
+          </div>
+          <h3>Project Title 1</h3>
+          <div class="portfolio__item-cta">
+            <a href="https://github.com" class='btn'>Github</a>
+            <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio2.jpg" alt="Project Title 2" />
+          </div>
+        <h3>Project Title 2</h3>
+        <div class="portfolio__item-cta">
+          <a href="https://github.com" class='btn'>Github</a>
+          <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+        </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio3.jpg" alt="Project Title 1" />
+          </div>
+        <h3>Project Title 3</h3>
+        <div class="portfolio__item-cta">
+          <a href="https://github.com" class='btn'>Github</a>
+          <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+        </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio4.jpg" alt="Project Title 4" />
+          </div>
+        <h3>Project Title 4</h3>
+        <div class="portfolio__item-cta">
+          <a href="https://github.com" class='btn'>Github</a>
+          <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+        </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio5.png" alt="Project Title 5" />
+          </div>
+        <h3>Project Title 5</h3>
+        <div class="portfolio__item-cta">
+          <a href="https://github.com" class='btn'>Github</a>
+          <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+        </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__item-image">
+            <img src="./assets/portfolio6.jpg" alt="Project Title 6" />
+          </div>
+        <h3>Project Title 6</h3>
+        <div class="portfolio__item-cta">
+          <a href="https://github.com" class='btn'>Github</a>
+          <a href="https://github.com" class='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+        </div>
+        </div>
+      </div>
+      <div class="extra-space">
+      </div>
+
+    </div>
+
+    <div id="Contact" class="tabcontent">
+
+      <h2 class="name">Contact Me</h2>
+
+      <div class="container contact__container">
+        <div class="contact__options">
+          <article class="contact__option">
+            <i class="fas fa-envelope contact__option-icon"></i>
+            <h4>Email</h4>
+            <h5>rodluisr@gmail.com</h5>
+            <a href="mailto:rodluisr@gmail.com">Send a Message</a>
+          </article>
+          <article class="contact__option">
+            <i class="fab fa-linkedin contact__option-icon"></i>
+            <h4>LinkedIn</h4>
+            <h5>Luis Rodriguez</h5>
+            <a href="www.linkedin.com/in/luisrrv" target="_blank" rel="noreferrer">Check me out</a>
+          </article>
+          <article class="contact__option">
+            <i class="fab fa-facebook-messenger contact__option-icon"></i>
+            <h4>Messenger</h4>
+            <h5>Luis Rodriguez</h5>
+            <a href="https://m.me/luis.rodriguez.3538" target="_blank" rel="noreferrer">Send a Message</a>
+          </article>
+        </div>
+        <form role="form" class="contact-form" id="contact-form">
+          <input type="text" name='name' placeholder='Your Full Name' required />
+          <input type="email" name='email' placeholder='Your Email' required />
+          <textarea name='message'rows="7" placeholder='Your Message' required ></textarea>
+          <button id="sendButton" type='submit' value="Send" class='btn btn-primary' onclick="sendMail()">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+
+    </div>
+    <script src="./script/tabs.js"></script>
+    <script src="./script/slides.js"></script>
+</body>
+</html>
