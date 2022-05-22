@@ -4,7 +4,7 @@ nav {
   display: flex;
   flex-direction: row;
   /* padding: 0.7rem 0.7rem; */
-  z-index: 2;
+  /* z-index: 2; */
   position: fixed;
   right: 0;
   top: 1rem;

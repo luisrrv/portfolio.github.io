@@ -439,9 +439,8 @@ height: 20rem;
     min-height: 120vh;
   }
   .banner {
-    background-size: cover;
-    background-position-y: center;
-    background-position-x: center;
+    background-repeat: unset;
+    background-attachment: unset;
   }
   .aboutme {
     margin-top: 0;
