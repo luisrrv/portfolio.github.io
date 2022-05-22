@@ -1,10 +1,10 @@
 /* About me page styles */
 #AboutMe {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-content: center;
-  height: 100vh;
+  align-content: center; */
+  /* height: 100vh; */
   /* background: #212121; */
   width: 100vw;
   /* margin-top: 24px */
@@ -12,8 +12,85 @@
 
 .name {
   font-family: 'Bungee Hairline', cursive;
-  font-size: 3rem;
+  font-size: 3.2rem;
   /* background-color: #be3144a1; */
+}
+.banner {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 150px 0; */
+  height: 60vh;
+}
+.title {
+  padding: 0 40px;
+  /* height: 30vh; */
+}
+.self-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  padding: 0 40px;
+  height: 100%;
+}
+.skills {
+  width: 100vw;
+  margin-top: 16px;
+}
+.experience__frontend {
+  position: relative;
+}
+.experience__backend{
+  position: relative;
+}
+.experience__design {
+  position: relative;
+}
+.frontend-img {
+  position: absolute;
+  background-image: url(../assets/frontend.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -44;
+  filter: blur(5px);
+  -webkit-filter: brightness(15%);
+  transition: 0.5s;
+}
+.backend-img {
+  position: absolute;
+  background-image: url(../assets/backend.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -44;
+  filter: blur(5px);
+  -webkit-filter: brightness(15%);
+  transition: 0.5s;
+}
+.design-img {
+  position: absolute;
+  background-image: url(../assets/design.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -44;
+  filter: blur(5px);
+  -webkit-filter: brightness(15%);
+  transition: 0.5s;
 }
 /*
 .home-title {
@@ -314,6 +391,12 @@ height: 20rem;
   color: var(--color-light);
 }
 
+.letswork {
+  width: 100%;
+  text-align: center;
+  margin-top: 48px;
+}
+
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
 @media screen and (max-width: 1024px) {
@@ -343,6 +426,9 @@ height: 20rem;
     margin: 1rem 0 1.5rem;
     font-size: 1.5rem;
   } */
+  .title-name {
+    font-size: 2.7rem;
+  }
 }
 
 /* ----------------------- MEDIA QUERIES (small) ------------------------ */
@@ -383,5 +469,14 @@ height: 20rem;
   }
   .header__container p {
     font-size: 100%;
+  }
+  .title-name {
+    font-size: 2rem;
+  }
+  .self-description {
+    font-size: 0.7rem;
+  }
+  .skills-link {
+    text-align: center;
   }
 }
