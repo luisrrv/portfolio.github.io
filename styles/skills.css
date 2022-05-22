@@ -1,12 +1,12 @@
 #Skills {
   border-radius: 0.25em;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   width: 100%;
   height: 100vh;
-  font-weight: 100;
+  font-weight: 100; */
 }
 #Skills > h2 {
   text-align: center;
@@ -99,24 +99,35 @@
 
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
   justify-content: center;
+  overflow: hidden;
   /* padding-bottom: 56px; */
 }
 
 .experience__container > div {
-  background: var(--color-bg-variant);
+  /* background: var(--color-bg-white); */
   padding: 2.4rem 5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
+  /* border-radius: 2rem; */
+  border: 1px solid white;
+  overflow: hidden;
   transition: var(--transition);
 }
 
 .experience__container > div:hover {
-  background: transparent;
-  border-color: var(--color-white);
+  /* background: transparent; */
+  border-color: var(--color-primary);
   cursor: default;
+}
+.experience__container > div:hover .frontend-img {
+  transform: scale(1.1);
+}
+.experience__container > div:hover .backend-img {
+  transform: scale(1.1);
+}
+.experience__container > div:hover .design-img {
+  transform: scale(1.1);
 }
 
 .experience__container > div h3 {
@@ -156,7 +167,7 @@
 
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1124px) {
   .experience__container {
     grid-template-columns: 1fr;
     /* width: 90%; */
