@@ -348,6 +348,9 @@ height: 20rem;
 /* ----------------------- MEDIA QUERIES (small) ------------------------ */
 
 @media screen and (max-width: 600px) {
+  #AboutMe {
+    min-height: 120vh;
+  }
   .aboutme {
     margin-top: 0;
   }
@@ -373,7 +376,7 @@ height: 20rem;
     height: 13rem;
   }
   .header__container h1 {
-    font-size: 300%;
+    font-size: 250%;
   }
   .header__container h5 {
     font-size: 100%;
