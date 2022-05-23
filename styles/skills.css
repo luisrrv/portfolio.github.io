@@ -113,7 +113,7 @@
   /* border-radius: 2rem; */
   border: 1px solid white;
   overflow: hidden;
-  transition: var(--transition);
+  transition: transform 2s;
 }
 
 .experience__container > div:hover {
