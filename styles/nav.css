@@ -3,15 +3,10 @@ nav {
   width: max-content;
   display: flex;
   flex-direction: row;
-  /* padding: 0.7rem 0.7rem; */
-  /* z-index: 2; */
   position: fixed;
   right: 0;
   top: 1rem;
-  /* transform: translateX(-50%); */
-  /* bottom: 2rem; */
   display: flex;
-  /* gap: 0.8rem; */
   border-radius: 4px 0 0 4px;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -27,7 +22,6 @@ nav a {
   padding: 0;
   height: 72px;
   width: 72px;
-  /* border-radius: 50%; */
   display: flex;
   color: var(--color-light);
   font-size: 1.1rem;
@@ -54,32 +48,12 @@ nav a.active {
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
 @media screen and (max-width: 1024px) {
-  /* nav {
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: unset;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
-  } */
+  /*  */
 }
 
 /* ----------------------- MEDIA QUERIES (small) ------------------------ */
 
 @media screen and (max-width: 600px) {
-  nav {
-    /* */
-  }
   nav a {
     height: 64px;
     width: 72px;

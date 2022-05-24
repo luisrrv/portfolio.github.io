@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url(./background.css);
 @import url(./nav.css);
 @import url(./aboutme.css);
 @import url(./skills.css);
 @import url(./projects.css);
 @import url(./contact.css);
 @import url(./footer.css);
+@import url(./scroll.css);
 
 
 /* Set height of body and the document to 100% */
@@ -46,16 +46,13 @@ html {
 }
 
 body {
-  /* height: 100%; */
   margin: 0;
-  /* font-family: "Montserrat", sans-serif; */
   font-weight: 100;
   transition: 200ms;
   font-family: 'Poiret One', cursive;
-  /* background: var(--color-bg); */
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../assets/bg-texture.png); */
+  background-color: black;
 }
 
 /* --------------- GENERAL STYLES --------------- */

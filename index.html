@@ -63,23 +63,19 @@
 
     <nav class="navbar">
         <a class="tablink" onclick="openPage('AboutMe', this, 'active')" id="defaultOpen"><i class="fas fa-user"></i><p id="nav-text">ABOUT</p></a>
-        <!-- <a class="tablink" onclick="openPage('Skills', this, 'active')"><i class="fas fa-book"></i><p id="nav-text">Skills</p></a> -->
         <a class="tablink" onclick="openPage('Projects', this, 'active')"><i class="fas fa-suitcase"></i><p id="nav-text">PROJECTS</p></a>
         <a class="tablink" onclick="openPage('Contact', this, 'active')"><i class="fas fa-comment-dots"></i><p id="nav-text">CONTACT</p></a>
     </nav>
-    <!-- <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div> -->
-    <div class="content">
 
+    <div class="content">
 
     <div id="AboutMe" class="tabcontent fade">
       <div class="banner" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url(./assets/me-about-pt.png);">
       </div>
       <div class="title">
-        <h1 class="name title-name"><span class="text-light">hello! I'm </span>Luis Rodriguez</h1>
+        <h1 class="name title-name js-load slide-right"><span class="text-light">hello! I'm </span>Luis Rodriguez</h1>
         <div class="self-description">
-          <div class="description">
+          <div class="description js-load slide-left">
             <h2 class="text-light">I am a passionate <span class="text-white">software developer</span>. I enjoy working on the <span class="text-white">UX/UI</span> as well as the <span class="text-white">backend</span>.</h2>
             <h2 class="text-light">I am always involved in new projects in order to develop quality products...</h2>
           </div>
@@ -91,7 +87,7 @@
         </div>
         <div id="Skills" class="skills">
           <div class="container experience__container">
-            <div class="experience__frontend">
+            <div class="experience__frontend js-scroll slide-right">
               <div class="frontend-img"></div>
               <h3>FRONTEND DEVELOPMENT</h3>
               <div class="experience__content">
@@ -139,7 +135,7 @@
                 </article>
               </div>
             </div>
-            <div class="experience__backend">
+            <div class="experience__backend js-scroll fade-in-bottom">
               <div class="backend-img"></div>
               <h3>BACKEND DEVELOPMENT</h3>
               <div class="experience__content">
@@ -180,7 +176,7 @@
                 </article>
               </div>
             </div>
-            <div class="experience__design">
+            <div class="experience__design js-scroll slide-left">
               <div class="design-img"></div>
               <h3>DESIGN</h3>
               <div class="experience__content">
@@ -205,154 +201,12 @@
           <h1>LETS WORK TOGETHER!</h1>
         </div>
       </div>
-      <!-- <header id='header'>
-        <div class="container header__container">
-          <h5 class="text-light">Hello I'm</h5>
-          <h1 class="name">Luis Rodriguez</h1>
-          <h5 class="text-light">Software Developer</h5>
-
-          <div class="me">
-            <div class="me-image">
-            </div>
-          </div>
-
-
-          <div class='header__socials'>
-            <a href="https://linkedin.com/in/luisrrv" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/luisrrv" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/luis.rrv" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
-          </div>
-
-          <div class="cta">
-            <a class='btn' href='.assets/cv.pdf' download>Download CV</a>
-            <a class='btn btn-primary' href="https://github.com/luisrrv" target="_blank">Github</a>
-          </div>
-
-          <div class="aboutme">
-
-        <div class="container about__container">
-          <div class="about__me">
-            <div class="about__me-image">
-              <img src="assets/me-header-pt.png" alt="About" />
-            </div>
-          </div>
-
-
-          <div class="about__content">
-
-            <p>I am a passionate software developer. I am always involved in new projects in order to develop quality products. I like to work with others and</p>
-
-          </div>
-        </div>
-          </div>
-
-        </div>
-      </header> -->
-
-
     </div>
 
-  <!-- <div id="Skills" class="tabcontent">
-      <h2 class="name">Skills</h2>
-      <div class="container experience__container">
-        <div class="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div class="experience__content">
-            <article class='experience__details'>
-              <i class="fab fa-html5 experience__details-icon"></i>
-              <div>
-                <h4>HTML</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fab fa-css3 experience__details-icon"></i>
-              <div>
-                <h4>CSS</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fab fa-js-square experience__details-icon"></i>
-              <div>
-                <h4>JavaScript</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="bi bi-bootstrap-fill experience__details-icon"></i>
-              <div>
-                <h4>Bootstrap</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fab fa-react experience__details-icon"></i>
-              <div>
-                <h4>React</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fab fa-sass experience__details-icon"></i>
-              <div>
-                <h4>SASS</h4>
-
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="experience__backend">
-          <h3>Backend Development</h3>
-          <div class="experience__content">
-            <article class='experience__details'>
-              <i class="fas fa-gem experience__details-icon"></i>
-              <div>
-                <h4>Ruby</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fas fa-project-diagram experience__details-icon"></i>
-              <div>
-                <h4>Graphql</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fas fa-database experience__details-icon"></i>
-              <div>
-                <h4>PostgreSQL</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fas fa-gem experience__details-icon"></i>
-              <div>
-                <h4>Rails</h4>
-
-              </div>
-            </article>
-            <article class='experience__details'>
-              <i class="fab fa-envira experience__details-icon"></i>
-              <div>
-                <h4>MongoDB</h4>
-
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="extra-space">
-
-      </div>
-
-    </div> -->
-
     <div id="Projects" class="tabcontent fade">
-      <h2 class="name">Projects</h2>
+      <h2 class="name js-load fade-in-bottom">Projects</h2>
       <div class="portfolio__container" id="portfolio">
-        <div class="portfolio__item">
+        <div class="portfolio__item js-load slide-left">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio1.jpg" alt="Project Title 1" />
           </div>
@@ -364,7 +218,7 @@
           </div>
           </div>
         </div>
-        <div class="portfolio__item">
+        <div class="portfolio__item js-load slide-right">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio2.jpg" alt="Project Title 2" />
           </div>
@@ -376,7 +230,7 @@
         </div>
         </div>
         </div>
-        <div class="portfolio__item">
+        <div class="portfolio__item js-scroll slide-left">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio3.jpg" alt="Project Title 1" />
           </div>
@@ -388,7 +242,7 @@
         </div>
         </div>
         </div>
-        <div class="portfolio__item">
+        <div class="portfolio__item js-scroll slide-right">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio4.jpg" alt="Project Title 4" />
           </div>
@@ -400,7 +254,7 @@
         </div>
         </div>
         </div>
-        <div class="portfolio__item">
+        <div class="portfolio__item js-scroll slide-left">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio5.png" alt="Project Title 5" />
           </div>
@@ -412,7 +266,7 @@
         </div>
         </div>
         </div>
-        <div class="portfolio__item">
+        <div class="portfolio__item js-scroll slide-right">
           <div class="portfolio__item-image">
             <img src="./assets/portfolio6.jpg" alt="Project Title 6" />
           </div>
@@ -432,12 +286,12 @@
 
     <div id="Contact" class="tabcontent fade">
 
-      <h2 class="name">Contact Me</h2>
+      <h2 class="name js-load fade-in-bottom">Contact Me</h2>
 
       <div class="contact-banner">
         <div class="contact-banner-img" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.2)), url(./assets/contact.jpg);"></div>
       <div class="contact__options">
-        <a href="mailto:rodluisr@gmail.com">
+        <a href="mailto:rodluisr@gmail.com" class="js-load slide-left">
           <article class="contact__option">
             <i class="fas fa-envelope contact__option-icon"></i>
             <!-- <h4>Email</h4> -->
@@ -445,7 +299,7 @@
             <p>Send a Message</p>
           </article>
         </a>
-        <a href="https://linkedin.com/in/luisrrv" target="_blank" rel="noreferrer">
+        <a href="https://linkedin.com/in/luisrrv" target="_blank" rel="noreferrer" class="js-load slide-left">
           <article class="contact__option">
             <i class="fab fa-linkedin contact__option-icon"></i>
             <!-- <h4>LinkedIn</h4> -->
@@ -453,7 +307,7 @@
             <p>Check me out</p>
           </article>
         </a>
-        <a href="https://instagram.com/luis.rrv" target="_blank" rel="noreferrer">
+        <a href="https://instagram.com/luis.rrv" target="_blank" rel="noreferrer" class="js-load slide-right">
           <article class="contact__option">
             <i class="fab fa-instagram contact__option-icon"></i>
             <!-- <h4>Instagram</h4> -->
@@ -461,7 +315,7 @@
             <p>Check me out</p>
           </article>
         </a>
-        <a href="https://m.me/luis.rodriguez.3538" target="_blank" rel="noreferrer">
+        <a href="https://m.me/luis.rodriguez.3538" target="_blank" rel="noreferrer" class="js-load slide-right">
           <article class="contact__option">
             <i class="fab fa-facebook-messenger contact__option-icon"></i>
             <!-- <h4>Messenger</h4> -->
@@ -493,5 +347,6 @@
       <p class="copyright">&copy; 2022 coded by Luis Rodriguez</p>
     </div>
     <script src="./script/tabs.js"></script>
+    <script src="./script/scroll.js"></script>
 </body>
 </html>
