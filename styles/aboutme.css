@@ -347,4 +347,7 @@ height: 20rem;
   .skills-link {
     text-align: center;
   }
+  .letswork h1 {
+    font-size: 32px;
+  }
 }

@@ -73,9 +73,9 @@
   border-radius: 2px;
   text-align: center;
   border: 2px solid white;
+  transition: var(--transition);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  transition: var(--transition);
 }
 
 .contact__option:hover {
@@ -84,7 +84,7 @@
 }
 
 .contact__option-icon {
-  color: white;
+  color: var(--color-primary);
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
