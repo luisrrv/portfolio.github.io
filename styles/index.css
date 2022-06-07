@@ -52,7 +52,7 @@ body {
   font-family: 'Poiret One', cursive;
   color: var(--color-white);
   line-height: 1.7;
-  background-color: black;
+  background-color: rgb(16, 16, 16);
 }
 
 /* --------------- GENERAL STYLES --------------- */
