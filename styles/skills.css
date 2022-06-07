@@ -68,6 +68,13 @@
   font-size: 2rem;
 }
 
+.resume-link {
+  text-transform: lowercase;
+  font-size: 20px;
+}
+.resume-link i {
+  font-size: 16px;
+}
 
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
