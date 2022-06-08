@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  top: 40%;
+  top: 35%;
   left: 0;
   width: 100%;
 }
@@ -56,7 +56,7 @@
 
 }
 .portfolio__item:hover .project-description {
-  display: block;
+  /* display: block; */
   transition: 500ms;
   opacity: 1;
   height: auto;
@@ -96,17 +96,20 @@ transition: opacity 1s ease-out;
 .project-tools {
 padding: 16px;
 font-size: 40px;
-/* display: none; */
+display: flex;
+justify-content: center;
+align-items: center;
 opacity: 0;
 height: 0;
 overflow: hidden;
 transition: opacity 1s ease-out;
+font-size: 56px;
 }
 .project-tools .devicon-rails-plain-wordmark {
-  font-size: 80px;
+  /* font-size: 80px; */
 }
 .project-tools .devicon-nodejs-plain-wordmark {
-  font-size: 80px;
+  /* font-size: 80px; */
 }
 /* ----------------------- MEDIA QUERIES (medium) ------------------------ */
 
