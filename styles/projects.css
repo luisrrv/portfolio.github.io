@@ -48,6 +48,10 @@
   -ms-transition: all 1.0s ease;
   transition: all 1.0s ease;
 }
+.cat-gif img {
+  width: 214%;
+  /* height: 100%; */
+}
 .portfolio__item:hover .portfolio__item-image {
   /* filter: blur(5px); */
   transform: scale(1.1);
