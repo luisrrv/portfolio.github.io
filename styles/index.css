@@ -141,6 +141,22 @@ a:hover {
   border-color: transparent;
 }
 
+#disabled {
+  opacity: 0.5;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: gray;
+  border: 1.2px solid gray;
+  cursor: default;
+}
+#disabled:hover {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: gray;
+  border-color: gray;
+  background-color: unset;
+}
+
 
 .btn-primary {
   backdrop-filter: blur(15px);
