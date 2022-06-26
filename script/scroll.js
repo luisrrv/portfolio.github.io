@@ -40,7 +40,7 @@ const handleScrollAnimation = () => {
     if (elementInView(el, 1.25)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+      // hideScrollElement(el)
     }
   })
 }
