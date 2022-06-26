@@ -1,2 +1,3 @@
 # My personal portfolio 💼 
-## Available at luisrrv.com
+## Check it out ⬇️
+https://luisrrv.com
